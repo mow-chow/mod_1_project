@@ -79,6 +79,62 @@ actors: ["Jennifer Lawrence", "Josh Hutcherson", "Liam Hemsworth", "Woody Harrel
 )
 
 
+Movie.create(
+title: "Monty Python and the Holy Grail", 
+plot: "King Arthur and his Knights of the Round Table embark on a surreal, low-budget search for the Holy Grail, encountering many, very silly obstacles.", 
+actors: ["Graham Chapman", "John Cleese", "Eric Idle"]
+)
+
+Movie.create(
+title: "Finding Nemo", 
+plot: "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.", 
+actors:["Albert Brooks", "Ellen DeGeneres", "Alexander Gould"]
+)
+
+Movie.create(
+title: "Good Morning, Vietnam", 
+plot: "In 1965, an unorthodox and irreverent DJ named Adrian Cronauer begins to shake up things when he is assigned to the U.S. Armed Services radio station in Vietnam.", 
+actors: ["Robin Williams", "Forest Whitaker", "Tung Thanh Tran"]
+)
+
+Movie.create(
+title: "Mrs. Doubtfire", 
+plot: "After a bitter divorce, an actor disguises himself as a female housekeeper to spend time with his children held in custody by his former wife.", 
+actors: ["Robin Williams", "Sally Field", "Pierce Brosnan"]
+)
+
+Movie.create(
+title: "Home Alone", 
+plot: "An eight-year-old troublemaker must protect his house from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation.", 
+actors: ["Macaulay Culkin", "Joe Pesci", "Daniel Stern"] 
+)
+
+
+Movie.create(
+title: "Deadpool", 
+plot: "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.", 
+actors: ["Ryan Reynolds","Morena Baccarin","T.J. Miller"]
+)
+
+
+Movie.create(
+title: "Ted", 
+plot: "John Bennett, a man whose childhood wish of bringing his teddy bear to life came true, now must decide between keeping the relationship with the bear or his girlfriend, Lori.", 
+actors: ["Mark Wahlberg", "Mila Kunis", "Seth MacFarlane"]
+)
+
+Movie.create(
+title: "Beverly Hills Cop" , 
+plot: "A freewheeling Detroit cop pursuing a murder investigation finds himself dealing with the very different culture of Beverly Hills.", 
+actors: ["Eddie Murphy", "Judge Reinhold", "John Ashton"]
+)
+
+Movie.create(
+title: "My Big Fat Greek Wedding", 
+plot: " A young Greek woman falls in love with a non-Greek and struggles to get her family to accept him while she comes to terms with her heritage and cultural identity.", 
+actors:["Nia Vardalos", "John Corbett", "Michael Constantine"] 
+)
+
 # Movie.create(
 # title: , 
 # plot: "", 
