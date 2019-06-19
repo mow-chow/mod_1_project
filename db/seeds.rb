@@ -1,11 +1,12 @@
-Movie.create(title: "The Dark Knight", plot: "A gang of criminals rob a Gotham City mob bank, murdering each other for a higher share of the money until only the Joker remains, who escapes with the money. Batman, District Attorney Harvey Dent and Lieutenant Jim Gordon form an alliance to rid Gotham City of organized crime.", actors: ["Christian Bale", " Michael Caine", " Heath Ledger", "  Gary Oldman", " Aaron Eckhart", " Maggie Gyllenhaal", " Morgan Freeman"]
+Movie.destroy_all
+Movie.create(title: "The Dark Knight", plot: "A gang of criminals rob a Gotham City mob bank, murdering each other for a higher share of the money until only the Joker remains, who escapes with the money. Batman, District Attorney Harvey Dent and Lieutenant Jim Gordon form an alliance to rid Gotham City of organized crime.", actors: ["Christian Bale", " Michael Caine", " Heath Ledger", "  Gary Oldman", " Aaron Eckhart", " Maggie Gyllenhaal", " Morgan Freeman"])
 
 
 
 Movie.create(
 title: "The Martian", 
 plot: "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
-actors: ["Matt Damon", " Jessica Chastain", " Kristen Wig", " Jeff Daniels", " Michael Pena", " Sean Bean", " Kate Mara", " Sebastian Stan", " Chiwetel Ejiofor", " Donald Glover"] 
+actors: ["Matt Damon", "Jessica Chastain", "Kristen Wig", " Jeff Daniels", " Michael Pena", "Sean Bean", " Kate Mara", " Sebastian Stan", " Chiwetel Ejiofor", " Donald Glover"] 
 )
 
 
@@ -16,7 +17,7 @@ actors: ["Bruce Willis", " Billy Bob Thornton", " Ben Affleck", " Liv Tyler", " 
 )
 
 Movie.create(
-title: "War of the Worlds"
+title: "War of the Worlds",
 plot: "After discovering that an asteroid the size of Texas is going to impact Earth in less than a month, N.A.S.A. recruits a misfit team of deep core drillers to save the planet.", 
 actors: ["Tom Cruise", "Dakota Fanning", "Tim Robbins", "Justin Chatwin"]
 )
@@ -116,7 +117,7 @@ actors: ["Bill Erwin", "Burk Byrnes", "Gabriel Damon"]
 )
 
 finding_nemo = Movie.create(title: "Finding Nemo", 
-plot: "A young clownfish is captured and taken to a dentist's office aquarium. It's up to his father and a friendly but forgetful regal blue tang fish, to make the epic journey to bring him home from Australia's Great Barrier Reef.")
+plot: "A young clownfish is captured and taken to a dentist's office aquarium. It's up to his father and a friendly but forgetful regal blue tang fish, to make the epic journey to bring him home from Australia's Great Barrier Reef.",
 actors: ["Albert Brooks", "Ellen DeGeneres", "Alexander Gould"]
 )
 
