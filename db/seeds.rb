@@ -75,6 +75,55 @@ plot: "Every citizen must watch as the youths fight to the death until only one 
 actors: ["Jennifer Lawrence", "Josh Hutcherson", "Liam Hemsworth", "Woody Harrelson", "Elizabeth Banks","Donald Sutherland", "Stanley Tucci", "Philip Seymour Hoffman"]
 )
 
+spider_man = Movie.create(title: "Spider-Man: Into the Spider-Verse",
+plot: "Teen Miles Morales becomes Spider-Man of his reality, crossing his path with five counterparts from another dimensions to stop a threat for all realities.", 
+actors: ["Shameik Moore", "Jake Johnson", "Hailee Steinfeld", "Mahershala Ali", "Kimiko Glenn", "Chris Pine", "Liev Schreiber", "Zoë Kravitz", "Nicolas Cage"] 
+)
+
+lion_king = Movie.create(title: "The Lion King",
+plot: "A lion cub born into a royal family can't wait to be king, but after tragedy strikes, he must avenge his family and learn responsibility.",
+actors: ["Rowan Atkinson", "Matthew Broderick", "Whoopi Goldberg", "Jonathan Taylor Thomas", "James Earl Jones", "Nathan Lane"]
+)
+
+incredibles = Movie.create(title: "The Incredibles",
+plot: "Bob and Helen Parr used to be among the world's greatest crime fighters. Fifteen years later, they have to adapt to civilian identities and retreat to the suburbs to live a \"normal\" life with their three kids.",
+actors: ["Craig Nelson", "Holly Hunter", 'Samuel L. Jackson']
+)
+
+toy_story = Movie.create(title: "Toy Story",
+plot: "Woody, a cowboy doll, is Andy's favorite. But when Buzz Lightyear arrives the space hero takes Andy's room by storm! Their rivalry leaves them lost and in a nightmare with Sid, a toy-torturing boy next door. To escape they need to work togethe.",
+actors: ["Tim Allen", "Tom Hanks", "Laurie Metcalf"]
+)
+
+monsters_inc = Movie.create(title: "Toy Story",
+plot: "Lovable Sulley and Mike Wazowski are the top scare team at MONSTERS, INC., the scream-processing factory in Monstropolis. When a little girl named Boo wanders into their world, monsters are scared silly, and it's up to Sulley and Mike to get her back home.",
+actors: ["John Goodman", "Billy Crystal", "James Coburn"]
+)
+
+lego_movie = Movie.create(title: "The LEGO Movie", 
+plot: "Movie follows Emmet, who is on an epic quest to stop an evil tyrant from gluing the universe together, a journey for which he is hopelessly and hilariously underprepared.",
+actors: ["Chris Pratt", "Will Ferrell", "Elizabeth Banks"]
+)
+
+frozen = Movie.create(title: "Frozen", 
+plot: "Fearless optimist Anna teams up with rugged mountain man Kristoff and his loyal reindeer Sven in an epic journey.",
+actors: ["Kristen Bell", "Idina Menzel"]
+)
+
+land_before_time = Movie.create(title: "The Land Before Time", 
+plot: "Go back in time with this animated classic as a group of young dinosaurs find themselves depending on one another to reach the Great Valley.",
+actors: ["Bill Erwin", "Burk Byrnes", "Gabriel Damon"]
+)
+
+finding_nemo = Movie.create(title: "Finding Nemo", 
+plot: "A young clownfish is captured and taken to a dentist's office aquarium. It's up to his father and a friendly but forgetful regal blue tang fish, to make the epic journey to bring him home from Australia's Great Barrier Reef.")
+actors: ["Albert Brooks", "Ellen DeGeneres", "Alexander Gould"]
+)
+
+rattatouille = Movie.create(title: "Rattatouille",
+plot: "In one of Paris' finest restaurants a determined rat, dreams of becoming a renowned French chef. Torn between his family and his true calling he and his human pal set in motion a hilarious chain of events.",
+actors: ["Patton Oswalt", "Ian Holm", "Lou Romano"]
+)
 
 Movie.create(
 title: "Monty Python and the Holy Grail", 
