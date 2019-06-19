@@ -76,9 +76,9 @@ plot: "Every citizen must watch as the youths fight to the death until only one 
 actors: ["Jennifer Lawrence", "Josh Hutcherson", "Liam Hemsworth", "Woody Harrelson", "Elizabeth Banks","Donald Sutherland", "Stanley Tucci", "Philip Seymour Hoffman"]
 )
 
-spider_man = Movie.create(title: "Spider-Man: Into the Spider-Verse",
+spider_man = Movie.create(title: "Into the Spider-Verse",
 plot: "Teen Miles Morales becomes Spider-Man of his reality, crossing his path with five counterparts from another dimensions to stop a threat for all realities.", 
-actors: ["Shameik Moore", "Jake Johnson", "Hailee Steinfeld", "Mahershala Ali", "Kimiko Glenn", "Chris Pine", "Liev Schreiber", "Zoë Kravitz", "Nicolas Cage"] 
+actors: ["Shameik Moore", "Jake Johnson", "Hailee Steinfeld", "Mahershala Ali", "Kimiko Glenn", "Chris Pine", "Liev Schreiber", "Zoe Kravitz", "Nicolas Cage"] 
 )
 
 lion_king = Movie.create(title: "The Lion King",
@@ -93,10 +93,10 @@ actors: ["Craig Nelson", "Holly Hunter", 'Samuel L. Jackson']
 
 toy_story = Movie.create(title: "Toy Story",
 plot: "Woody, a cowboy doll, is Andy's favorite. But when Buzz Lightyear arrives the space hero takes Andy's room by storm! Their rivalry leaves them lost and in a nightmare with Sid, a toy-torturing boy next door. To escape they need to work togethe.",
-actors: ["Tim Allen", "Tom Hanks", "Laurie Metcalf"]
+actors: ["Tim Allen", "Tom Hanks", "Laurie Metcalf", "Richard Kind"]
 )
 
-monsters_inc = Movie.create(title: "Toy Story",
+monsters_inc = Movie.create(title: "Monsters Inc",
 plot: "Lovable Sulley and Mike Wazowski are the top scare team at MONSTERS, INC., the scream-processing factory in Monstropolis. When a little girl named Boo wanders into their world, monsters are scared silly, and it's up to Sulley and Mike to get her back home.",
 actors: ["John Goodman", "Billy Crystal", "James Coburn"]
 )
@@ -108,7 +108,7 @@ actors: ["Chris Pratt", "Will Ferrell", "Elizabeth Banks"]
 
 frozen = Movie.create(title: "Frozen", 
 plot: "Fearless optimist Anna teams up with rugged mountain man Kristoff and his loyal reindeer Sven in an epic journey.",
-actors: ["Kristen Bell", "Idina Menzel"]
+actors: ["Kristen Bell", "Idina Menzel", "Josh Gad","Jonathan Groff"]
 )
 
 land_before_time = Movie.create(title: "The Land Before Time", 
@@ -133,13 +133,13 @@ actors: ["Graham Chapman", "John Cleese", "Eric Idle"]
 )
 
 Movie.create(
-title: "Finding Nemo", 
-plot: "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.", 
-actors:["Albert Brooks", "Ellen DeGeneres", "Alexander Gould"]
+title: "This is the End", 
+plot: "Some of Hollywood's biggest stars find themselves at a party when the apocalypse begins." 
+actors:["James Franco", "Seth Rogan", "Jonah Hill", "Jay Baruchel", "Danny McBride","Craig Robinson", "Michael Cera", "Emma Watson", "Rihanna", "Channing Tatum", "Paul Rudd", "Aziz Ansari"]
 )
 
 Movie.create(
-title: "Good Morning, Vietnam", 
+title: "Good Morning Vietnam", 
 plot: "In 1965, an unorthodox and irreverent DJ named Adrian Cronauer begins to shake up things when he is assigned to the U.S. Armed Services radio station in Vietnam.", 
 actors: ["Robin Williams", "Forest Whitaker", "Tung Thanh Tran"]
 )

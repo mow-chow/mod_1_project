@@ -4,7 +4,6 @@ class CLI
 
     def run
         all_movies = Movie.all
-        binding.pry
         @prompt = TTY::Prompt.new
         @pastel = Pastel.new
         @user = nil
@@ -72,48 +71,57 @@ class CLI
 
    def question_generator
     `reset`
-    Movie.all
-   
-    question = [@title, @plot, @actors].sample
+    movie = Movie.all.sample
+    question = [movie.title, movie.plot, movie.actors].sample
     case question
         when @title
-            puts "Name an actor who apeared in #{self.title}."
+            puts "Name an actor who apeared in #{movie.title}."
             user_input1 = gets.chomp.downcase
             question.any? {|x| x.actors.downcase == user_input1}
                 if true
                     puts "Well played human. I will defeat you next time"
-                    exit
+                    sleep 2
+                    question_generator
                 else false
                     puts "Incorrect. Pre-pare to die, human..."
+                    sleep 2
                     puts "\n\n"
                     `say 'Game Over'`
                     puts "GAME OVER"
                     exit
                 end 
         when @plot
-            puts "Name the movie title that goes with the following description: #{self.plot}"
+            puts "Name the movie title that goes with the following description: #{movie.plot}"
             user_input2 = gets.chomp
-            if user_input2.downcase == self.title.downcase
+            if user_input2.downcase == movie.title.downcase
                 puts "Well played human. I will defeat you next time..."
-                exit
+                sleep 2
+                question_generator
             else 
                 puts "Incorrect. Pre-pare to die, human"
+                sleep 2
                     puts "\n\n"
                     `say 'Game Over'`
                     puts "GAME OVER"
+                    sleep 2
                     exit
             end 
-        else @actors
-            puts "Name the movie that this collection of actors appears in. #{self.actors}"
+        else 
+            
+            puts "Name the movie that this collection of actors appears in. #{movie.actors}"
             user_input3 = gets.chomp.downcase
-            if user_input3 == self.title
+            
+            if user_input3 == movie.title.downcase
                 puts "Well played human. I will defeat you next time..."
-                exit
+                sleep 2
+                question_generator
             else
                 puts "Incorrect. Pre-pare to die, human"
+                    sleep 1
                     puts "\n\n"
                     `say 'Game Over'`
                     puts "GAME OVER"
+                    sleep 2
                     exit
             end 
 
