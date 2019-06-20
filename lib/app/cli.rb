@@ -9,6 +9,8 @@ class CLI
         @user = nil
         font = TTY::Font.new(:doom)
         title_crawl
+       
+
 
 
         while true 
@@ -19,29 +21,29 @@ class CLI
 
     def title_crawl
         `reset`
-        puts @pastel.red("Welcome to...\n\n\n\n")
-        sleep 1
+         puts @pastel.red("Welcome to...\n\n\n\n")
+         sleep 1
         font = TTY::Font.new(:doom)
-        pastel = Pastel.new
-        puts pastel.yellow(font.write("The Movie Game", letter_spacing: 1))
+         pastel = Pastel.new
+         puts pastel.yellow(font.write("The Movie Game", letter_spacing: 1))
         `say 'Welcome to The Movie Game'`
-        puts @pastel.magenta("Developed with love and pizza by: Cat, Nerajno & Chris")
-        sleep 2
-        puts pastel.red("\n\n\nThe fate of humanity rests on your knowledge of movies, actors, and movie plots \n\n")
+         puts @pastel.magenta("Developed with love and pizza by: Cat, Nerajno & Chris")
+         sleep 2
+         puts pastel.red("\n\n\nThe fate of humanity rests on your knowledge of movies, actors, and movie plots \n\n")
         sleep 1
-        puts pastel.red("If you are ready...\n\n")
+         puts pastel.red("If you are ready...\n\n")
         sleep 1
         puts @pastel.cyan("Speak friend and enter the movie game")
         user_input = gets.chomp.downcase
-        if user_input == "friend" 
-            puts "\n\n\n Noice job...Gandork \n\n\n\n"
+         if user_input == "friend" 
+             puts "\n\n\n Noice job...Gandork \n\n\n\n"
             main_menu
-        else 
-            `say 'Hobbit,please. Try again'`
-            puts "If you can't figure this out its because we havent become 'close-personal-acquaintances'"
-            title_crawl
+         else 
+             `say 'Hobbit,please. Try again'`
+             puts "If you can't figure this out its because we havent become 'close-personal-acquaintances'"
+             title_crawl
             
-        end 
+         end 
     end
     
 
@@ -93,18 +95,17 @@ class CLI
         when :title
             puts @pastel.green("Name an actor who apeared in #{movie.title}.")
             user_input1 = gets.chomp.downcase
-            
-            movie.actors.include?(user_input1.downcase)
-                if true
+            if movie.actors.include?(user_input1.downcase)
                     puts @pastel.cyan("Well played human. I will defeat you next time")
                     sleep 1
                     question_generator
-                else false
+                else 
                     puts @pastel.red"Incorrect. Pre-pare to die, human..."
                     sleep 1
                     puts "\n\n"
                     `say 'Game Over'`
-                    puts  font = TTY::Font.new(:doom)
+                    puts
+                    font = TTY::Font.new(:doom)
                     pastel = Pastel.new
                     puts pastel.red(font.write("GAME OVER", letter_spacing: 1))
                     sleep 2
