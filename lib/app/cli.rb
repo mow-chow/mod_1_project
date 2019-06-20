@@ -4,16 +4,14 @@ class CLI
 
     def run
         all_movies = Movie.all
-        @prompt = TTY::Prompt.new
+        @prompt = TTYS::Prompt.new
         @pastel = Pastel.new
         @user = nil
         title_crawl
 
-
         while true 
             main_menu
         end 
-
     end
 
     def title_crawl
@@ -30,8 +28,7 @@ class CLI
         else 
             `say 'Hobbit,please. Try again'`
             puts "If you can't figure this out its because we havent become 'close-personal-acquaintances'"
-            title_crawl
-            
+            title_crawl      
         end 
     end
     
@@ -65,6 +62,12 @@ class CLI
 
    end 
 
+   ########### 
+   #TODO =>  need to work on this some more 
+   #need to push this to the user score / user_points
+   user_points = 0 
+   ###########
+
    def start_game
     question_generator
    end 
@@ -80,6 +83,8 @@ class CLI
             question.any? {|x| x.actors.downcase == user_input1}
                 if true
                     puts "Well played human. I will defeat you next time"
+                    puts "\n\n"
+                    user_points + = 1 
                     sleep 2
                     question_generator
                 else false
@@ -87,6 +92,8 @@ class CLI
                     sleep 2
                     puts "\n\n"
                     `say 'Game Over'`
+                    puts "Your score is #{user_points}"
+                    puts "\n\n"
                     puts "GAME OVER"
                     exit
                 end 
@@ -95,6 +102,8 @@ class CLI
             user_input2 = gets.chomp
             if user_input2.downcase == movie.title.downcase
                 puts "Well played human. I will defeat you next time..."
+                puts "\n\n"
+                user_points + = 1 
                 sleep 2
                 question_generator
             else 
@@ -102,16 +111,18 @@ class CLI
                 sleep 2
                     puts "\n\n"
                     `say 'Game Over'`
+                    puts "Your score is #{user_points}"
+                    puts "\n\n"
                     puts "GAME OVER"
                     sleep 2
                     exit
             end 
-        else 
-            
+        else    
             puts "Name the movie that this collection of actors appears in. #{movie.actors}"
             user_input3 = gets.chomp.downcase
-            
             if user_input3 == movie.title.downcase
+                puts "\n\n"
+                user_points + = 1 
                 puts "Well played human. I will defeat you next time..."
                 sleep 2
                 question_generator
@@ -120,23 +131,13 @@ class CLI
                     sleep 1
                     puts "\n\n"
                     `say 'Game Over'`
+                    puts "Your score is #{user_points}"
+                    puts "\n\n"
                     puts "GAME OVER"
                     sleep 2
                     exit
-            end 
-
-            
-        end
-
-    
-end 
-    
-       
-   
-
-
-
-
-
+            end          
+        end    
+    end 
 end 
 
