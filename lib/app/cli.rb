@@ -107,6 +107,7 @@ class CLI
                     puts  font = TTY::Font.new(:doom)
                     pastel = Pastel.new
                     puts pastel.red(font.write("GAME OVER", letter_spacing: 1))
+                    sleep 2
                     title_crawl
                 end 
         when :plot
@@ -123,6 +124,7 @@ class CLI
                     `say 'Game Over'`
                     puts  font = TTY::Font.new(:doom)
                     pastel = Pastel.new
+                    sleep 2
                     puts pastel.red(font.write("GAME OVER", letter_spacing: 1))
                     title_crawl
                     
@@ -143,6 +145,7 @@ class CLI
                     `say 'Game Over'`
                     font = TTY::Font.new(:doom)
                     pastel = Pastel.new
+                    sleep 2
                     puts pastel.red(font.write("GAME OVER", letter_spacing: 1))
                     title_crawl
 
