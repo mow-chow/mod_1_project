@@ -84,7 +84,7 @@ class CLI
                 if true
                     puts "Well played human. I will defeat you next time"
                     puts "\n\n"
-                    user_points + = 1 
+                    user_points += 1 
                     sleep 2
                     question_generator
                 else false
@@ -103,7 +103,7 @@ class CLI
             if user_input2.downcase == movie.title.downcase
                 puts "Well played human. I will defeat you next time..."
                 puts "\n\n"
-                user_points + = 1 
+                user_points += 1 
                 sleep 2
                 question_generator
             else 
@@ -122,7 +122,7 @@ class CLI
             user_input3 = gets.chomp.downcase
             if user_input3 == movie.title.downcase
                 puts "\n\n"
-                user_points + = 1 
+                user_points += 1 
                 puts "Well played human. I will defeat you next time..."
                 sleep 2
                 question_generator

@@ -134,7 +134,7 @@ actors: ["Graham Chapman", "John Cleese", "Eric Idle"]
 
 Movie.create(
 title: "This is the End", 
-plot: "Some of Hollywood's biggest stars find themselves at a party when the apocalypse begins." 
+plot: "Some of Hollywood's biggest stars find themselves at a party when the apocalypse begins.",
 actors:["James Franco", "Seth Rogan", "Jonah Hill", "Jay Baruchel", "Danny McBride","Craig Robinson", "Michael Cera", "Emma Watson", "Rihanna", "Channing Tatum", "Paul Rudd", "Aziz Ansari"]
 )
 
